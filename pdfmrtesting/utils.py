@@ -1,5 +1,13 @@
 
-def determine_result(text: str):
+def determine_result(text: str) -> str:
+    """Determines based on if a string is empty, if the PDF is Machine Readable or Needs OCR
+
+    Args:
+        text (str): the text extracted from the PDF
+
+    Returns:
+        str: A determination based on the string contents if "Machine Readable" or "Needs OCR"
+    """
     
     if text == "":
         result = 'Needs OCR'
